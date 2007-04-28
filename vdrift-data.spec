@@ -1,9 +1,9 @@
 %define gamename vdrift
 %define name %{gamename}-data
 %define version 0.1
-%define fulldate 2006-10-06
+%define fulldate 2007-03-23
 %define date %(echo %{fulldate} | sed -e 's/-//g')
-%define release %mkrel 0.%{date}
+%define release %mkrel 0.%{date}.1
 
 Summary: Data files for the VDrift driving simulation
 Name: %{name}
@@ -15,6 +15,7 @@ Group: Games/Arcade
 Url: http://vdrift.net/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
+Requires: %{gamename}
 
 %description
 VDrift is a cross-platform, open source driving simulation made with
@@ -38,5 +39,3 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_gamesdatadir}/%{gamename}/data/*
-
-
