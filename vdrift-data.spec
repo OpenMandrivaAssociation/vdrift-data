@@ -13,6 +13,7 @@ Source0: %{gamename}-%{fulldate}-data-full.tar.bz2
 License: GPL
 Group: Games/Arcade
 Url: http://vdrift.net/
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch: noarch
 Requires: %{gamename}
 
