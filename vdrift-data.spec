@@ -1,7 +1,7 @@
 %define gamename vdrift
 %define name %{gamename}-data
 %define version 0.2
-%define fulldate 2007-03-23
+%define fulldate 2007-12-26
 %define date %(echo %{fulldate} | sed -e 's/-//g')
 %define release %mkrel 0.%{date}.2
 
@@ -9,7 +9,7 @@ Summary: Data files for the VDrift driving simulation
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{gamename}-%{fulldate}-data-full.tar.bz2
+Source0: %{gamename}-%{fulldate}-src.tar.bz2
 License: GPL
 Group: Games/Arcade
 Url: http://vdrift.net/
