@@ -1,9 +1,9 @@
 %define gamename vdrift
 %define name %{gamename}-data
 %define version 0.2
-%define fulldate 2007-12-26
+%define fulldate 2008-03-11
 %define date %(echo %{fulldate} | sed -e 's/-//g')
-%define release %mkrel 0.%{date}.2
+%define release %mkrel 0.%{date}.1
 
 Summary: Data files for the VDrift driving simulation
 Name: %{name}
