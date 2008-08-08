@@ -3,7 +3,7 @@
 %define version 0.2
 %define fulldate 2008-03-11
 %define date %(echo %{fulldate} | sed -e 's/-//g')
-%define release %mkrel 0.%{date}.1
+%define release %mkrel 2.%{date}.1
 
 Summary: Data files for the VDrift driving simulation
 Name: %{name}
